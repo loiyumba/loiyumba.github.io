@@ -1,7 +1,7 @@
 ---
-label: post
-Title: This site is under construction
-Subtitle: Test run
+layout: post
+title: This site is under construction
+subtitle: Test run
 ---  
 
 ### Trial  
