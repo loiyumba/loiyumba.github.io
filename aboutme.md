@@ -12,4 +12,4 @@ What else do you need?
 
 ### My history
 
-Check my twitter and instagram feeds
+Check my [twitter](https://twitter.com/loiyumba) and [instagram](https://www.instagram.com/loiyumba.lourembam/) feeds
