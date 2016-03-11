@@ -1,8 +1,8 @@
 ---
 layout: post
-subtitle: null
-date: ""
-published: false
+subtitle: testing
+date: "2016-03-11"
+published: true
 title: "image-test"
 ---
 
