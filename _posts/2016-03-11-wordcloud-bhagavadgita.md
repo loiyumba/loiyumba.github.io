@@ -15,7 +15,7 @@ _Bhagavad Gita._ On the similar path, I want to construct the wordcloud of _Holy
 Here's the wordcloud from Bhagavad Gita's text. The larger the words, the most frequented it is. And they are clustered around
 the centre. As the word is moving away from the centre and the size of the word become smaller, it means the word count is getting less
 in the text. So the outermost and the smaller words are less in number in the text.
-![wordcloud]({{loiyumba.github.io}}/img/wordcloud.png)
+![wordcloud](/img/wordcloud.png)
 So the words like thou, one, soul, thy, thee, prince, life, arjuna, heart, self, krishna, lord, shall, etc. are the most frequented words
 in this holy text. Below is the actual count of the words and I just displayed the highest top 20 in the text. 
 
