@@ -70,8 +70,8 @@ disqus: "loiyumba"
 
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Kolkata"
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
