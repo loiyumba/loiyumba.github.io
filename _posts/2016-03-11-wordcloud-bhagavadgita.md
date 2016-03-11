@@ -9,11 +9,11 @@ published: true
 
 I am not religious. It's not like I believe in atheism too. I like the aspects of teaching about life in the holy books. Therefore,
 I thought of checking out the most repeated words in the holy book of Hindus first - _"Bhagavad Gita"_
-
+![wordcloud.png]({{site.baseurl}}/img/wordcloud.png)
 The idea came lately after browsing free ebooks on [gutenberg](http://www.gutenberg.org/). That's how I stumble
 upon _Bhagavad Gita._ The idea of counting most frequented words strike my mind and that's how I created this beautiful wordcloud of
 _Bhagavad Gita._ On the similar path, I want to construct the wordcloud of _Holy Bible_ and _Holy Quran_ as well. But I will do it some other time. 
-![wordcloud.png]({{site.baseurl}}/img/wordcloud.png)
+
 Here's the wordcloud from Bhagavad Gita's text. The larger the words, the most frequented it is. And they are clustered around
 the centre. As the word is moving away from the centre and the size of the word become smaller, it means the word count is getting less
 in the text. So the outermost and the smaller words are less in number in the text.
