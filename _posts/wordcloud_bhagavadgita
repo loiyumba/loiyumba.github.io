@@ -1,0 +1,11 @@
+---
+layout: post
+title: WordCloud of Bhagavad Gita
+subtitle: Most frequented words in Hindu's holy text
+date: 11-03-2016
+---
+
+```{r}
+gita <- read.csv("gita.csv")
+```
+
