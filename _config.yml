@@ -71,7 +71,7 @@ url-pretty: "loiyumba.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Kolkata"
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
