@@ -6,6 +6,7 @@ published: true
 title: "image-test"
 ---
 
+
 ## A New Post
 # To check whether the image insert works or not
 ![install-steps.gif]({{site.baseurl}}/img/install-steps.gif)
