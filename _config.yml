@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: loiyumba.github.io
+title: loiyumba
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: A personal site to publish my work!
 
 # --- Navigation bar options --- #
 
@@ -61,7 +61,7 @@ url-pretty: "loiyumba.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "loiyumba"
+disqus: "loiyumba-site"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
@@ -83,6 +83,7 @@ defaults:
       type: "posts"
     values:
       comments: true  # add comments to all blog posts
+      show-share: true # add sharing buttons to all blog posts
   -
     scope:
       path: "" # all files
