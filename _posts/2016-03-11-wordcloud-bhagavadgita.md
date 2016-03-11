@@ -2,6 +2,7 @@
 layout: post
 title: WordCloud of Bhagavad Gita
 subtitle: Most frequented words in Hindu's holy text
+img: wordcloud.png
 date: 11-03-2016
 ---
 
