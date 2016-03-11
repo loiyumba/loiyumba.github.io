@@ -5,13 +5,12 @@ subtitle: Most frequented words in Hindu's holy text
 date: 11-03-2016
 ---
 
-I am not religious at all. It's not like I believe in atheism too. I like the aspects of teaching about life in the holy books. Therefore,
+I am not religious. It's not like I believe in atheism too. I like the aspects of teaching about life in the holy books. Therefore,
 I thought of checking out the most repeated words in the holy book of Hindus first - _"Bhagavad Gita"_
 
-The idea was not there earlier. I was checking out free ebooks in gutenberg project in their [website](www.gutenberg.org). That's how I stumble
-upon _Bhagavad Gita._ Then, the idea of counting most frequented words strike my mind and that's how I created this beautiful wordcloud of
-_Bhagavad Gita._ On the similar path, I want to construct the wordcloud of _Holy Bible_ and _Holy Quran_ as well. But I will do it some 
-other time. 
+The idea came lately after browsing free ebooks on gutenberg project in their [website](www.gutenberg.org). That's how I stumble
+upon _Bhagavad Gita._ The idea of counting most frequented words strike my mind and that's how I created this beautiful wordcloud of
+_Bhagavad Gita._ On the similar path, I want to construct the wordcloud of _Holy Bible_ and _Holy Quran_ as well. But I will do it some other time. 
 
 Here's the wordcloud from Bhagavad Gita's text. The larger the words, the most frequented it is. And they are clustered around
 the centre. As the word is moving away from the centre and the size of the word become smaller, it means the word count is getting less
