@@ -5,7 +5,7 @@
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://loiyumba.github.io"
-baseurl: "http://loiyumba.github.io"
+baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -71,7 +71,7 @@ url-pretty: "loiyumba.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Kolkata"
 markdown: kramdown
-highlighter: pygments
+highlighter: rough
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
