@@ -43,7 +43,7 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | men | 43 |
 
 Here's the r code which made the above wordcloud
-```{r}
+{% highlight r %}
 # Load the necessary packages
 require(wordcloud)
 require(tm)
@@ -82,4 +82,4 @@ gita_df <- data.frame(word = names(gita_word_freq), freq = gita_word_freq) # cha
 gita_df[1:20, ] # check the first top 20 words
 # Generate wordcloud
 wordcloud(gita_df$word, gita_df$freq, random.order = FALSE, colors = brewer.pal(6, "Dark2"), max.words = Inf)
-```
+{% endhighlight &}
