@@ -9,6 +9,6 @@ title: "image-test"
 
 ## A New Post
 # To check whether the image insert works or not
-![install-steps.gif]({{site.baseurl}}/img/install-steps.gif)
+![wordcloud]({{site.baseurl}}/img/wordcloud.png)
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
