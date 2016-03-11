@@ -4,6 +4,7 @@ title: WordCloud of Bhagavad Gita
 subtitle: "Most frequented words in Hindu&#x27;s holy text"
 date: "11-03-2016"
 published: true
+fb-img: http://loiyumba.github.io/img/wordcloud.png
 ---
 
 
@@ -43,44 +44,3 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | mind | 44 |
 | men | 43 |
 
-Here's the r code which made the above wordcloud
-{% highlight r %}
-# Load the necessary packages
-require(wordcloud)
-require(tm)
-# Set working directory
-setwd("..\\Words Cloud for Bhagavadgita")
-
-# Get the data from the site - www.gutenberg.org where all the texts are available for free
-gita <- readLines("http://www.gutenberg.org/cache/epub/2388/pg2388.txt")
-# How many lines it read?
-length(gita) # 3687 lines
-# We need to extract only the lines which is actually the text of Bhagavadgita, and remove other notes
-# In order to do that we need to find out from which line it starts and in which line it ends
-gita # read all lines to check the start and end lines. 
-# It starts from 170 and ends at 3229
-gita <- gita[170:3229] # subset rows to get extract the actual text
-head(gita) # read the first 6 lines
-tail(gita) # read the last 6 lines
-# Remove all the punctuations
-gita <- gsub(gita, pattern = "[[:punct:]]", replacement = " ")
-# Lower case all the text
-gita <- tolower(gita)
-# It's better to save the text so that we don't have to download the text everytime we run this code
-write.csv(gita, "gita.txt", row.names = FALSE)
-# Make it corpus so that we create wordcloud
-gita_corpus <- Corpus(VectorSource(gita))
-gita_corpus <- tm_map(gita_corpus, stripWhitespace) # remove extra spaces in the text
-gita_corpus <- tm_map(gita_corpus, removeWords, stopwords()) # remove stopwords
-gita_corpus <- tm_map(gita_corpus, removeWords, c("chapter")) # remove the word 'chapter'
-gita_corpus <- tm_map(gita_corpus, PlainTextDocument) # convert it into plain text document
-# Change it to matrix
-gita_DTM <- DocumentTermMatrix(gita_corpus) 
-gita_mat <- as.matrix(gita_DTM)
-# Count the frequency of the each words in the matrix
-gita_word_freq <- sort(colSums(gita_mat), decreasing = TRUE) 
-gita_df <- data.frame(word = names(gita_word_freq), freq = gita_word_freq) # change it into data frame
-gita_df[1:20, ] # check the first top 20 words
-# Generate wordcloud
-wordcloud(gita_df$word, gita_df$freq, random.order = FALSE, colors = brewer.pal(6, "Dark2"), max.words = Inf)
-{% endhighlight &}
