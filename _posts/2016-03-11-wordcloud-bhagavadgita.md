@@ -43,7 +43,7 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | men | 43 |
 
 Here's the r code which made the above wordcloud
-```r
+```{r}
 # Load the necessary packages
 require(wordcloud)
 require(tm)
