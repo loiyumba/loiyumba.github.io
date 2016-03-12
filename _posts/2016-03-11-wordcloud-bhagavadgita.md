@@ -43,11 +43,11 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | men | 43 |
 
 Here's the r code for generating the above wordcloud  
-```r
+~~~
 x <- function(x){
 if(x < 5){
 y <- x + 10
 } else {
 y <- 0
-```
+~~~
 
