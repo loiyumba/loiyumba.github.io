@@ -41,14 +41,5 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | mind | 44 |
 | men | 43 |
 
-Here's the r code for generating the above wordcloud  
-```r
-require(data.table)
-x <- function(x){
-if(x < 5){
-y <- x + 10
-} else {
-y <- 0
-}
-```
+The r code to create this wordcloud is available [here](https://gist.github.com/loiyumba/f9fc491dc5ada8cf2e4b)
 
