@@ -42,7 +42,7 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | mind | 44 |
 | men | 43 |
 
-Here's the r code for generating the above wordcloud
+Here's the r code for generating the above wordcloud  
 ```r
 x <- function(x){
 if(x < 5){
