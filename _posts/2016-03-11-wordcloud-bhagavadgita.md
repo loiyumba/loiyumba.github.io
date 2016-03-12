@@ -1,9 +1,8 @@
 ---
 layout: post
 title: WordCloud of Bhagavad Gita
-subtitle: "Most frequented words in Hindu&#x27;s holy text"
-date: "11-03-2016"
-published: true
+subtitle: "Most frequented words in Hindu's holy text"
+date: 11-03-2016
 fb-img: http://loiyumba.github.io/img/wordcloud.png
 ---
 
@@ -43,11 +42,13 @@ in this holy text. Below is the actual count of the words and I just displayed t
 | men | 43 |
 
 Here's the r code for generating the above wordcloud  
-~~~
+```r
+require(data.table)
 x <- function(x){
 if(x < 5){
 y <- x + 10
 } else {
 y <- 0
-~~~
+}
+```
 
