@@ -20,6 +20,7 @@ Here are the maps. It's self explanatory
 [![jain population]({{ site.url }}/img/ind_rel/jain_india.png)]({{ site.url }}/img/ind_rel/jain_india.png)  
 [![other population]({{ site.url }}/img/ind_rel/other_believer_india.png)]({{ site.url }}/img/ind_rel/other_believer_india.png)  
 [![not stated population]({{ site.url }}/img/ind_rel/not_stated_india.png)]({{ site.url }}/img/ind_rel/not_stated_india.png)  
+
 This data can also be added to google map layer and we can create a map like this  
 [![not stated population]({{ site.url }}/img/ind_rel/not_stated_google.png)]({{ site.url }}/img/ind_rel/not_stated_google.png)
 
@@ -30,5 +31,5 @@ We can also select certain regions of the country. Here I zoomed the northeaster
 [![christian]({{ site.url }}/img/ind_rel/christian.png)]({{ site.url }}/img/ind_rel/christian.png)  
 [![other]({{ site.url }}/img/ind_rel/other_google.png)]({{ site.url }}/img/ind_rel/other_google.png)
 
-Here's the code fo recreate these maps.  
+Here's the [code](https://gist.github.com/loiyumba/a9f4abf4823947db3437) fo recreate these maps.  
 You can access the raw data [here](http://www.censusindia.gov.in/2011census/C-01.html)
