@@ -19,13 +19,16 @@ Here are the maps. It's self explanatory
 [![sikh population]({{ site.url }}/img/ind_rel/sikh_india.png)]({{ site.url }}/img/ind_rel/sikh_india.png)  
 [![jain population]({{ site.url }}/img/ind_rel/jain_india.png)]({{ site.url }}/img/ind_rel/jain_india.png)  
 [![other population]({{ site.url }}/img/ind_rel/other_believer_india.png)]({{ site.url }}/img/ind_rel/other_believer_india.png)  
-[![not stated population]({{ site.url }}/img/ind_rel/not_stated_india.png)]({{ site.url }}/img/ind_rel/not_stated_india.png)
+[![not stated population]({{ site.url }}/img/ind_rel/not_stated_india.png)]({{ site.url }}/img/ind_rel/not_stated_india.png)  
+This data can also be added to google map layer and we can create a map like this  
+[![not stated population]({{ site.url }}/img/ind_rel/not_stated_google.png)]({{ site.url }}/img/ind_rel/not_stated_google.png)
 
 We can also select certain regions of the country. Here I zoomed the northeastern part of the country for the same data.  
 
 [![hindu]({{ site.url }}/img/ind_rel/hindu.png)]({{ site.url }}/img/ind_rel/hindu.png)  
 [![muslim]({{ site.url }}/img/ind_rel/muslim.png)]({{ site.url }}/img/ind_rel/muslim.png)  
-[![christian]({{ site.url }}/img/ind_rel/christian.png)]({{ site.url }}/img/ind_rel/christian.png)
+[![christian]({{ site.url }}/img/ind_rel/christian.png)]({{ site.url }}/img/ind_rel/christian.png)  
+[![other]({{ site.url }}/img/ind_rel/other_google.png)]({{ site.url }}/img/ind_rel/other_google.png)
 
 Here's the code fo recreate these maps.  
 You can access the raw data [here](http://www.censusindia.gov.in/2011census/C-01.html)
