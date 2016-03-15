@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "India by Religious Community"
-subtitle: "India's religious population as per 2011 census"
+subtitle: "Mapping India's religious population as per 2011 census"
 date: 2016-03-15
 fb-img: https://github.com/loiyumba/loiyumba.github.io/tree/master/img/ind_rel/hindu_india.png
 ---
@@ -21,7 +21,8 @@ Here are the maps. It's self explanatory
 [![other population]({{ site.url }}/img/ind_rel/other_believer_india.png)]({{ site.url }}/img/ind_rel/other_believer_india.png)  
 [![not stated population]({{ site.url }}/img/ind_rel/not_stated_india.png)]({{ site.url }}/img/ind_rel/not_stated_india.png)  
 
-This data can also be added to google map layer and we can create a map like this  
+This data can also be added to google map layer and we can create a map like this
+
 [![not stated population]({{ site.url }}/img/ind_rel/not_stated_google.png)]({{ site.url }}/img/ind_rel/not_stated_google.png)
 
 We can also select certain regions of the country. Here I zoomed the northeastern part of the country for the same data.  
@@ -29,6 +30,7 @@ We can also select certain regions of the country. Here I zoomed the northeaster
 [![hindu]({{ site.url }}/img/ind_rel/hindu.png)]({{ site.url }}/img/ind_rel/hindu.png)  
 [![muslim]({{ site.url }}/img/ind_rel/muslim.png)]({{ site.url }}/img/ind_rel/muslim.png)  
 [![christian]({{ site.url }}/img/ind_rel/christian.png)]({{ site.url }}/img/ind_rel/christian.png)  
+
 [![other]({{ site.url }}/img/ind_rel/other_google.png)]({{ site.url }}/img/ind_rel/other_google.png)
 
 Here's the [code](https://gist.github.com/loiyumba/a9f4abf4823947db3437) fo recreate these maps.  
