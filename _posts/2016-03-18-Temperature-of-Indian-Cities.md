@@ -16,4 +16,5 @@ a heatmap of cities with monthly average temperature over the period of 200 year
 temperature vary monthly. Instead of listing all the cities, I selected only few, mostly capitals of the states. Here's the heatmap.  
 [![temperature]({{ site.url }}/img/cities.png)]({{ site.url }}/img/cities.png) 
 
-To recreate this heatmap, get the code on [github](https://gist.github.com/loiyumba/07c23c1585e185d58339)
+To recreate this heatmap, get the code on [github](https://gist.github.com/loiyumba/07c23c1585e185d58339)  
+Or, you can check on [kaggle](https://www.kaggle.com/kokchak/d/berkeleyearth/climate-change-earth-surface-temperature-data/heatmap-of-some-indian-cities)
