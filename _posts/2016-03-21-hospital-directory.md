@@ -13,5 +13,5 @@ free. So I went ahead and put it online. Here's the [shinyapp](https://loiyumba.
 hospital directory in India. Since the data is big, it is little slow to retrieve the data. Also, if the server is busy, it is again slow.
 Have patience and the app will bring the data you are looking for.
 
-The shiny app code is here
+The shiny app code is [here](https://gist.github.com/loiyumba/54c6e347c681e73ee80d)
 
