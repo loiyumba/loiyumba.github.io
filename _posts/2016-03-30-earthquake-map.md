@@ -1,5 +1,5 @@
 ---
-outlay: post
+layout: post
 title: Major Earthquakes in Indian subcontinent
 subtitle: Interactive map power by Shiny
 ---
