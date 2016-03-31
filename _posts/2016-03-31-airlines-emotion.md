@@ -9,3 +9,5 @@ This is the upcoming post I am trying on sentiment analysis of major airlines in
 alligned with page width. So this is a test to adjust allignment of pictures in the the post.
 
 [![airindia]({{ site.url }}/img/airline_emotion/airindia.png)]({{ site.url }}/img/airline_emotion/airindia.png) 
+
+[![airindia2]({{ site.url }}/img/airline_emotion/airindia2.png)]({{ site.url }}/img/airline_emotion/airindia2.png)
