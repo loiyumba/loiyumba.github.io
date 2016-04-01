@@ -16,3 +16,7 @@ Here are the tweets reaction on major Indian Airlines from last week of March 20
 [![jetairways]({{ site.url }}/img/airline_emotion/jet.png)]({{ site.url }}/img/airline_emotion/jet.png)
 
 [![spicejet]({{ site.url }}/img/airline_emotion/spicejet.png)]({{ site.url }}/img/airline_emotion/spicejet.png)
+
+As we can see from the above 3 plots, the highest percentage of emotions showed on Air India and Jet Airways are fear and sadness whereas Spicejet's highest percentage of emotions are trust and joy.
+
+
