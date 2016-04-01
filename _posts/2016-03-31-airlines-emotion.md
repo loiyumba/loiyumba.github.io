@@ -10,4 +10,6 @@ alligned with page width. So this is a test to adjust allignment of pictures in 
 
 [![airindia4]({{ site.url }}/img/airline_emotion/airindia4.png)]({{ site.url }}/img/airline_emotion/airindia4.png)
 
+[![jetairways]({{ site.url }}/img/airline_emotion/jet.png)]({{ site.url }}/img/airline_emotion/jet.png)
+
 This works perfectly fine!
