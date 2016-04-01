@@ -11,3 +11,5 @@ alligned with page width. So this is a test to adjust allignment of pictures in 
 [![airindia]({{ site.url }}/img/airline_emotion/airindia.png)]({{ site.url }}/img/airline_emotion/airindia.png) 
 
 [![airindia2]({{ site.url }}/img/airline_emotion/airindia2.png)]({{ site.url }}/img/airline_emotion/airindia2.png)
+
+[![airindia4]({{ site.url }}/img/airline_emotion/airindia4.png)]({{ site.url }}/img/airline_emotion/airindia4.png)
