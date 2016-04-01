@@ -19,6 +19,6 @@ Here are the tweets reaction on major Indian Airlines from last week of March 20
 
 As we can see from the above 3 plots, the highest percentage of emotions showed on Air India and Jet Airways are fear and sadness whereas Spicejet's highest percentage of emotions are trust and joy. Since there were less tweets for Indigo Airlines, I didn't make plot for the said airline.
 
-To reproduce similar work, please check the code [here]
+To reproduce similar work, please check the code [here](https://gist.github.com/loiyumba/605ba5bd44d65b904c93d83d37d7e57f)
 
 
