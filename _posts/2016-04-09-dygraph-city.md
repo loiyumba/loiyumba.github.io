@@ -7,13 +7,15 @@ fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/temperatu
 
 Here's the look of shinyapp to visualize the temperature trend of major cities of India for the last 200 years. And I am going to write how I made this.  
 This is the landing page -  
+
 [![homepage]({{ site.url }}/img/temperature/home_page2.png)]({{ site.url }}/img/temperature/home_page2.png)
 
 This is what we see after we entered the city name and click on submit -  
+
 [![entered]({{ site.url }}/img/temperature/city_entered.png)]({{ site.url }}/img/temperature/city_entered.png)
 
 We will divide the tasks into two -  
-* Getting and cleaning data 
+* Getting and cleaning data  
 * Shiny app
 
 # Getting and cleaning data
