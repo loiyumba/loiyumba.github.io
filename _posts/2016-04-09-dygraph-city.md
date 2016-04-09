@@ -1,13 +1,22 @@
 ---
 layout: post
 title: Dygraphs visualization of temperature trend
-subtitle: Shinyapp for spotting temperature trend of major Indian cities
+subtitle: Shiny app tutorial for spotting temperature trend of major Indian cities
 fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/temperature/home_page2.png
 ---
 
-Here's the look of shinyapp to visualize the temperature trend of major cities of India for the last 200 years. And I am going to write how I made this.
-
+Here's the look of shinyapp to visualize the temperature trend of major cities of India for the last 200 years. And I am going to write how I made this.  
+This is the landing page -  
 [![homepage]({{ site.url }}/img/temperature/home_page2.png)]({{ site.url }}/img/temperature/home_page2.png)
+
+This is what we see after we entered the city name and click on submit -  
+[![entered]({{ site.url }}/img/temperature/city_entered.png)]({{ site.url }}/img/temperature/city_entered.png)
+
+We will divide the tasks into two -  
+* Getting and cleaning data 
+* Shiny app
+
+# Getting and cleaning data
 
 First of all, we need to get the data. The data is available at [kaggle](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data). You can download it in your local computer and read it in r as
 
@@ -47,6 +56,18 @@ We don't need all the other features for plotting temperature trend. So we go ah
 india <- india[, c(dt, AverageTemperature, City)]
 ```
 
+If we see the class of features in the data, we will notice that the date feature is in character class. We will change that to date class.
 
+```r
+india$dt <- as.Date(india$dt, format = "%Y-%m-%d")
+```
+
+We can save this data to our local directory so that we can put this data into the folder from where shiny app is going to launch. In order for shiny app to work, the folder has to have shiny code and the data together.
+
+```r
+write.csv(india, "india.csv", row.names = FALSE) # to save the data)
+```
+
+# Shiny app
 
 I am assuming you are familiar with shinyapp. If not, a great material to learn shiny is available at shiny [homepage](http://shiny.rstudio.com/)
