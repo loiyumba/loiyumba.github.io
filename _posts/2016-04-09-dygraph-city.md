@@ -15,7 +15,7 @@ First of all, we need to get the data. The data is available at [kaggle](https:/
 temp_data <- read.csv("temp_data.csv", stringsAsFactor = FALSE)
 ```
 
-I usually read it with `data.table` package so that I can manipulate data with it. Alternatively, if the data is big, I use `readr` package for fast reading. So if you want to load the data using data.table then this is how you do it.
+I usually read it with `data.table` package so that I can manipulate data using its functions. Alternatively, if the data is big, I use `readr` package for fast reading. So if you want to load the data using data.table then this is how you do it.
 
 ```r
 temp_data <- fread("temp_data.csv")
@@ -41,7 +41,7 @@ In the beginning I wanted to do this for all the cities listed in the data but t
 india <- temp_data[Country == "India", ]
 ```
 
-We don't need all the other features for plotting temperature trend. So we go ahead and selected required features such as Date, City name and Temperature data.
+We don't need all the other features for plotting temperature trend. So we go ahead and select required features such as Date, City name and Temperature data.
 
 ```r
 india <- india[, c(dt, AverageTemperature, City)]
