@@ -15,4 +15,6 @@ First of all, we need to get the data. The data is available at [kaggle](https:/
 temp_data <- read.csv("temp_data.csv", stringsAsFactor = FALSE)
 ```
 
+I usually read it with ~~data.table~~ package so that I can manipulate data with it. Alternatively, if the data is big, I use ~~readr~~ package for fast reading. 
+
 I am assuming you are familiar with shinyapp. If not, a great material to learn shiny is available at shiny [homepage](http://shiny.rstudio.com/)
