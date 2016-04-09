@@ -21,7 +21,7 @@ I usually read it with `data.table` package so that I can manipulate data with i
 temp_data <- fread("temp_data.csv")
 ```
 
-Once the data is loaded in r, we can do data exploration like checking out structure, classes, summary, missing values, anything unusual. We can run some of these inbuilt function 
+Once the data is loaded in r, we can do data exploration like checking out structure, classes, summary, missing values, anything unusual. We can run some of these inbuilt functions to understand the data better.
 
 ```r
 dim(temp_data) # checking the dimension of data
@@ -33,6 +33,18 @@ If we see observations with missing values, we can remove those values.
 
 ```r
 temp_data <- na.omit(temp_data)
+```
+
+In the beginning I wanted to do this for all the cities listed in the data but the file is about 500 mb, so I decided to do only for Indian cities. Of course, India because I am from India. We subset all the observations where feature Country is listed as India and in data.table, we can do something like this
+
+```r
+india <- temp_data[Country == "India", ]
+```
+
+We don't need all the other features for plotting temperature trend. So we go ahead and selected required features such as Date, City name and Temperature data.
+
+```r
+india <- india[, c(dt, AverageTemperature, City)]
 ```
 
 
