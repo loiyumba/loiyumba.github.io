@@ -15,6 +15,26 @@ First of all, we need to get the data. The data is available at [kaggle](https:/
 temp_data <- read.csv("temp_data.csv", stringsAsFactor = FALSE)
 ```
 
-I usually read it with `data.table` package so that I can manipulate data with it. Alternatively, if the data is big, I use `readr` package for fast reading. 
+I usually read it with `data.table` package so that I can manipulate data with it. Alternatively, if the data is big, I use `readr` package for fast reading. So if you want to load the data using data.table then this is how you do it.
+
+```r
+temp_data <- fread("temp_data.csv")
+```
+
+Once the data is loaded in r, we can do data exploration like checking out structure, classes, summary, missing values, anything unusual. We can run some of these inbuilt function 
+
+```r
+dim(temp_data) # checking the dimension of data
+str(temp_data) # checking classes of features
+summary(temp_data) # summarising data feature wise
+sapply(temp_data, function(x) sum(is.na(x))) # checking missing values
+```
+If we see observations with missing values, we can remove those values.
+
+```r
+temp_data <- na.omit(temp_data)
+```
+
+
 
 I am assuming you are familiar with shinyapp. If not, a great material to learn shiny is available at shiny [homepage](http://shiny.rstudio.com/)
