@@ -105,6 +105,36 @@ To successfully run this app, we have to save it as **app.R**. And the data shou
 
 [![shinylook]({{ site.url }}/img/temperature/shiny-runapp.png)]({{ site.url }}/img/temperature/shiny-runapp.png)
 
+Once you click on Run App button on the right, your app should run. 
+
+We will split this part into two-   
+* UI part
+* Server part
+
+### UI part
+
+First we add title of the app. Once we add title and run the app, you will see whatever text we have added in the title appears in the app. Interaction options in the app will be in *fluidpage* function, and to add different options we use different function. For title, this function adds title in the shiny app.
+
+```r
+ui <- fluidpage(
+       titlePanel("Average Temperature of Indian Cities"),
+
+ ```
+ 
+In the app layout, we will have the option to choose city and display text info on the left, and the remaining part of the layout as dygraph output. So we continue our *ui* code as follows-
+
+```r
+ui <- fluidpage(
+       titlePanel("Average Temperture of Indian Cities"),
+       sidebarLayout(
+        sidebarPanel(
+ ```
+ 
+ 
+
+
+
+
 
 
 
