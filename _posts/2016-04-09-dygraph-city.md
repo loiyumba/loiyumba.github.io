@@ -15,10 +15,10 @@ This is what we see after we entered the city name and click on submit -
 [![entered]({{ site.url }}/img/temperature/city_entered.png)]({{ site.url }}/img/temperature/city_entered.png)
 
 We will divide the tasks into two -  
-* Getting and cleaning data  
+* Getting and preparing data  
 * Shiny app
 
-# Getting and cleaning data 
+# Getting and preparing data 
  --- 
 
 First of all, we need to get the data. The data is available at [kaggle](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data). You can download it in your local computer and read it in r as
