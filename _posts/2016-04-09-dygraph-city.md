@@ -108,7 +108,7 @@ To successfully run this app, we have to save it as **app.R**. And the data shou
 Once you click on Run App button on the right, your app should run. 
 
 We will split this part into two-   
-* UI part
+* UI part  
 * Server part
 
 ### UI part
@@ -169,6 +169,68 @@ ui <- fluidpage(
           p("5. Hover your mouse over the graph to see month, year and temperature"),
           p("6. Drag and select the region in the plot to zoom-in the desired time period. Double click on the plot to zoom-out."),
 ```
+
+We also want to add the source of the data - a link url where user can click and take it to the source page of the data provider. I want to put a thin line which parts the above texts and the source link and this can be done in this way
+
+```r
+ui <- fluidpage(
+       titlePanel("Average Temperture of Indian Cities"),
+       sidebarLayout(
+         sidebarPanel(
+          textInput("text", "Enter a City", value = ""),
+           submitButton("Submit"),
+           br(),
+          p("Note:"),
+          p("1. Start the city name with capital letter. It is case sensitive. "),
+          p("2. Some cities are named as their old name, e.g. Bombay for Mumbai."),
+          p("3. Some cities are not in the data. If the city you've entered doesn't
+           return any result, please try some other city."),
+          p("4. Some months or years might be missing for some cities."),
+          p("5. Hover your mouse over the graph to see month, year and temperature"),
+          p("6. Drag and select the region in the plot to zoom-in the desired time period. Double click on the plot to zoom-out."),
+           hr(),
+        p("Data is provided by", a("kaggle", href = "https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data", target = "_blank"))
+      ),
+```
+
+Now, the side panel is done. Next is the dygraph output panel. For this we use
+
+```r
+mainPanel(
+dygraphOutput("dygraph")
+```
+
+Our *ui* code is complete. The overall *ui* code looks like this
+
+```r
+ui <- fluidPage(
+   
+   # Application title
+   titlePanel("Average Temperature of Indian Cities"),
+   sidebarLayout(
+      sidebarPanel(
+         textInput("text", "Enter a City", value = ""),
+         submitButton("Submit"),
+         br(),
+         p("Note:"),
+         p("1. Start the city name with capital letter. It is case sensitive. "),
+         p("2. Some cities are named as their old name, e.g. Bombay for Mumbai."),
+         p("3. Some cities are not in the data. If the city you've entered doesn't
+           return any result, please try some other city."),
+         p("4. Some months or years might be missing for some cities."),
+        p("5. Hover your mouse over the graph to see month, year and temperature"),
+        p("6. Drag and select the region in the plot to zoom-in the desired time period. Double click on the plot to zoom-out."),
+        hr(),
+        p("Data is provided by", a("kaggle", href = "https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data", target = "_blank"))
+      ),
+      mainPanel(
+         dygraphOutput("dygraph")
+      )
+   )
+)
+```
+
+
 
 
 
