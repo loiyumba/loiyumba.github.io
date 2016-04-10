@@ -351,7 +351,7 @@ So here is screen shot of the app where a city is entered which is not in the da
 
 [![kohima]({{ site.url }}/img/temperature/screen_shot3.png)]({{ site.url }}/img/temperature/screen_shot3.png)
 
-Another feature of dygraph is to zoom-in to the desire time period in the graph. To zoon-out, we can double-click on the graph. Screen shots of the app where the graph is zoomed-in.
+Another feature of dygraph is to zoom-in to the desire time period in the graph. Select a time range by dragging your mouse on the graph to zoom-in. To zoon-out, we can double-click on the graph. Screen shots of the app where the graph is zoomed-in.
 
 [![bombay]({{ site.url }}/img/temperature/bombay.png)]({{ site.url }}/img/temperature/bombay.png)
 
@@ -359,7 +359,7 @@ Another feature of dygraph is to zoom-in to the desire time period in the graph.
 
 And finally, the screen shot where the mouse is over the graph at a particular point where it displays the label of that point.
 
-[![srinagar]({{ site.url }}/img/temperature/city_entered.png)]({{ site.url }}/img/temperature/srinagar.png)
+[![srinagar]({{ site.url }}/img/temperature/srinagar.png)]({{ site.url }}/img/temperature/srinagar.png)
 
 To access the app, please click [here](https://loiyumba.shinyapps.io/Global_Temp/)
 
