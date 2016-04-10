@@ -118,8 +118,7 @@ First we add title of the app. Once we add title and run the app, you will see w
 ```r
 ui <- fluidpage(
        titlePanel("Average Temperature of Indian Cities"),
-
- ```
+```
  
 In the app layout, we will have the option to choose city and display text info on the left, and the remaining part of the layout as dygraph output. So we continue our *ui* code as follows-
 
@@ -127,8 +126,8 @@ In the app layout, we will have the option to choose city and display text info 
 ui <- fluidpage(
        titlePanel("Average Temperture of Indian Cities"),
        sidebarLayout(
-        sidebarPanel(
- ```
+         sidebarPanel(
+```
  
  
 
