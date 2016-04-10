@@ -351,7 +351,7 @@ So here is screen shot of the app where a city is entered which is not in the da
 
 [![kohima]({{ site.url }}/img/temperature/screen_shot3.png)]({{ site.url }}/img/temperature/screen_shot3.png)
 
-Another feature of dygraph is to zoom-in to the desire time period in the graph. Select a time range by dragging your mouse on the graph to zoom-in. To zoon-out, we can double-click on the graph. Screen shots of the app where the graph is zoomed-in.
+Another feature of dygraph is to zoom-in to the desire time period in the graph. Select a time range by dragging your mouse on the graph to zoom-in. To zoom-out, we can double-click on the graph. Screen shots of the app where the graph is zoomed-in.
 
 [![bombay]({{ site.url }}/img/temperature/bombay.png)]({{ site.url }}/img/temperature/bombay.png)
 
