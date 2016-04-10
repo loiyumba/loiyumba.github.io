@@ -230,7 +230,7 @@ ui <- fluidPage(
 
 ### Server part
 
-The *server* function comes with two arguments - `input` and `output`. `input` is a list we read values from and `output` is a list we will write values to. `input` will contain all the values of all different inputs we have defined in the *ui* part. Similarly, `output` is where we will save output objects(in our case - dygraph) to display in our app. Also, whatever we want to achieve with our data, we have to do it in the *server* part. In our app, the table is in data.table format and in order for dygraph to take, we have to change the table into time series format, and we define all these in the *server* part. Also, we are going to use `reactive` function so that everytime a user enter a city and click on submit, the code will automatically bring up the time series graph of that city. So it's going to look like this for the first few lines.
+The *server* function comes with two arguments - `input` and `output`. `input` is a list we read values from and `output` is a list we will write values to. `input` will contain all the values of all different inputs we have defined in the *ui* part. Similarly, `output` is where we will save output objects(in our case - dygraph) to display in our app. Also, whatever we want to achieve with our data, we have to do it in the *server* part. In our app, the table is in data.table format and in order for dygraph to take, we have to change the table into time series format, and we define all these in the *server* part. From data table to time series data, we need to load the `xts` package. Also, we are going to use `reactive` function so that everytime a user enter a city and click on submit, the code will automatically bring up the time series graph of that city. And to create time series graphs, we load `dygraphs` package. So it's going to look like this for the first few lines.
 
 ```r
 server <- function(input, output) {
@@ -242,13 +242,127 @@ server <- function(input, output) {
 
 When a user land at the app, since the text input is empty, it'll show an error message instead of graph. So the shiny functions `validate` and `need` are used to hide the error message and change it to some meaningful message. In our case, we used *"Plot will be here when you enter a city"*.
 
+After this, we need to make a condition where the input text("city") is picked from the data along with its date and temperature features. Once the selected city data is picked, we have to change it to time series data with just date and temperature feature. But before that, we need to add another `validate` and `need` functions to hide error message whenever a user enters a city which is not in the data. We display this message for our app - *"City not in the data. Please enter another city"*. And up to this the *server* code look like this.
+
+```r
+server <- function(input, output) {
+   enter_city <- reactive({
+    validate(
+      need(input$text != "", "Plot will be here when you enter a city")
+       )
+    select_city <- subset(india, City == input$text)
+    validate(
+    need(input$text %in% select_city$City, "City not in the data. Please enter another city.")
+    )
+   select_city[, .(dt, AverageTemperature)]
+   xts(select_city$AverageTemperature, as.Date(select_city$dt, format = "%Y-%m-%d"))
+   })
+```
+
+The input text part is done. Now the output part which is a dygraph(time series graph) for any city entered in the text input. We use shiny `render` function and for dygraph, we need to use particular function `renderDygraph`. We also want whichever city name is entered to display the name of the city in the graph's title and the y-label axis name to "Temp (c)". One good thing about dygraph is that when we mouse over the graph, it'll display the info of that data point. So in our graph, the label displays at any mouse over point as month, year and temperature value. But instead of temperature, it was showing as V1. So the last line changes the display of temperature from V1 to Temp. With `renderDygraph` function, the code looks like this.
+
+```r
+server <- function(input, output) {
+  enter_city <- reactive({
+    validate(
+      need(input$text != "", "Plot will be here when you enter a city")
+       )
+    select_city <- subset(india, City == input$text)
+    validate(
+    need(input$text %in% select_city$City, "City not in the data. Please enter another city.")
+    )
+   select_city[, .(dt, AverageTemperature)]
+   xts(select_city$AverageTemperature, as.Date(select_city$dt, format = "%Y-%m-%d"))
+   })
+     output$dygraph <- renderDygraph({
+     dygraph(enter_city(),
+             main = paste("Average temperature of", input$text)) %>%
+       dyAxis("y", label = "Temp (C)") %>%
+       dySeries("V1", label  = "Temp")
+       })
+}
+```
+
+And finally to run the application, we need this `shinyApp` function
+
+```r
+shinyApp(ui = ui, server = server)
+```
+
+The final **app.R** looks like this and is ready to be published.
+
+```r
+library(shiny)
+library(xts)
+library(dygraphs)
+library(data.table)
+
+india <- fread("india.csv")
+
+ui <- fluidPage(
+   titlePanel("Average Temperature of Indian Cities"),
+   sidebarLayout(
+      sidebarPanel(
+         textInput("text", "Enter a City", value = ""),
+         submitButton("Submit"),
+         br(),
+         p("Note:"),
+         p("1. Start the city name with capital letter. It is case sensitive. "),
+         p("2. Some cities are named as their old name, e.g. Bombay for Mumbai."),
+         p("3. Some cities are not in the data. If the city you've entered doesn't
+           return any result, please try some other city."),
+         p("4. Some months or years might be missing for some cities."),
+        p("5. Hover your mouse over the graph to see month, year and temperature"),
+        p("6. Drag and select the region in the plot to zoom-in the desired time period. Double click on the plot to zoom-out."),
+        hr(),
+        p("Data is provided by", a("kaggle", href = "https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data", target = "_blank"))
+      ),
+      mainPanel(
+         dygraphOutput("dygraph")
+      )
+   )
+)
 
 
+server <- function(input, output) {
+  enter_city <- reactive({
+    validate(
+      need(input$text != "", "Plot will be here when you enter a city")
+       )
+    select_city <- subset(india, City == input$text)
+    validate(
+    need(input$text %in% select_city$City, "City not in the data. Please enter another city.")
+    )
+   select_city[, .(dt, AverageTemperature)]
+   xts(select_city$AverageTemperature, as.Date(select_city$dt, format = "%Y-%m-%d"))
+   })
+     output$dygraph <- renderDygraph({
+     dygraph(enter_city(),
+             main = paste("Average temperature of", input$text)) %>%
+       dyAxis("y", label = "Temp (C)") %>%
+         dySeries("V1", label = "Temp")
+       })
+}
 
+shinyApp(ui = ui, server = server)
+```
 
+So here is screen shot of the app where a city is entered which is not in the data.
 
+[![kohima]({{ site.url }}/img/temperature/screen_shot3.png)]({{ site.url }}/img/temperature/screen_shot3.png)
 
+Another feature of dygraph is to zoom-in to the desire time period in the graph. To zoon-out, we can double-click on the graph. Screen shots of the app where the graph is zoomed-in.
 
+[![bombay]({{ site.url }}/img/temperature/bombay.png)]({{ site.url }}/img/temperature/bombay.png)
 
+[![bombay_zoom]({{ site.url }}/img/temperature/bombay_zoom.png)]({{ site.url }}/img/temperature/bombay_zoom.png)
 
+And finally, the screen shot where the mouse is over the graph at a particular point where it displays the label of that point.
 
+[![srinagar]({{ site.url }}/img/temperature/city_entered.png)]({{ site.url }}/img/temperature/srinagar.png)
+
+To access the app, please click [here](https://loiyumba.shinyapps.io/Global_Temp/)
+
+Once you load the `shiny` package in your rstudio console, you can always do help function for any `shiny` function to know its arguments and usage. For example- `?shinyApp`, `?validate`, `?renderDygraph` and so on.
+
+Thank you for reading and if you have questions, please leave it in the comment section below.
