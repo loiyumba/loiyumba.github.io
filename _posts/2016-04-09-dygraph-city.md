@@ -128,9 +128,47 @@ ui <- fluidpage(
        sidebarLayout(
          sidebarPanel(
 ```
- 
- 
 
+Since our input option is text input, we will have the option to enter text. There are many other input options and controls are available for shiny app. For more info on input options and controls, please see the shiny home page. In our case, we go ahead and add *textInput* function so that users can enter city name.
+
+```r
+ui <- fluidpage(
+       titlePanel("Average Temperture of Indian Cities"),
+       sidebarLayout(
+         sidebarPanel(
+          textInput("text", "Enter a City", value = ""),
+```
+
+Here, the moment user enter a city name, instantly the dygraph displays. This we don't want. We want to have some control like a user enters a city name and click on Submit button, then only dygraph displays. In order to add this feature, we add another line of code.
+
+```r
+ui <- fluidpage(
+       titlePanel("Average Temperture of Indian Cities"),
+       sidebarLayout(
+         sidebarPanel(
+          textInput("text", "Enter a City", value = ""),
+           submitButton("Submit"),
+```
+
+Now, we want to add some texts informing users about this app with a decent space and look. For this we will put line breaks and texts as numbered lists.
+
+```r
+ui <- fluidpage(
+       titlePanel("Average Temperture of Indian Cities"),
+       sidebarLayout(
+         sidebarPanel(
+          textInput("text", "Enter a City", value = ""),
+           submitButton("Submit"),
+           br(),
+          p("Note:"),
+          p("1. Start the city name with capital letter. It is case sensitive. "),
+          p("2. Some cities are named as their old name, e.g. Bombay for Mumbai."),
+          p("3. Some cities are not in the data. If the city you've entered doesn't
+           return any result, please try some other city."),
+          p("4. Some months or years might be missing for some cities."),
+          p("5. Hover your mouse over the graph to see month, year and temperature"),
+          p("6. Drag and select the region in the plot to zoom-in the desired time period. Double click on the plot to zoom-out."),
+```
 
 
 
