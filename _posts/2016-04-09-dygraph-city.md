@@ -18,7 +18,8 @@ We will divide the tasks into two -
 * Getting and cleaning data  
 * Shiny app
 
-# Getting and cleaning data
+# Getting and cleaning data 
+ --- 
 
 First of all, we need to get the data. The data is available at [kaggle](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data). You can download it in your local computer and read it in r as
 
@@ -69,6 +70,7 @@ We can save this data to our local directory so that we can put this data into t
 ```r
 write.csv(india, "india.csv", row.names = FALSE) # to save the data)
 ```
+
 
 # Shiny app 
  --- 
