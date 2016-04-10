@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Dygraphs visualization of temperature trend
-subtitle: Shiny app tutorial for spotting temperature trend of major Indian cities
+subtitle: Shiny app tutorial for temperature trend of major Indian cities
 fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/temperature/home_page2.png
 ---
 
-Here's the look of shinyapp to visualize the temperature trend of major cities of India for the last 200 years. And I am going to write how I made this.  
+Here's the look of shiny app to visualize the temperature trend of major cities of India for the last 200 years. And I am going to write how I made this.  
 This is the landing page -  
 
 [![homepage]({{ site.url }}/img/temperature/home_page2.png)]({{ site.url }}/img/temperature/home_page2.png)
@@ -30,6 +30,7 @@ temp_data <- read.csv("temp_data.csv", stringsAsFactor = FALSE)
 I usually read it with `data.table` package so that I can manipulate data using its functions. Alternatively, if the data is big, I use `readr` package for fast reading. So if you want to load the data using data.table then this is how you do it.
 
 ```r
+require(data.table)
 temp_data <- fread("temp_data.csv")
 ```
 
