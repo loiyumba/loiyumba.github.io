@@ -76,5 +76,16 @@ write.csv(india, "india.csv", row.names = FALSE) # to save the data)
 # Shiny app 
  --- 
  
+If you are not familiar with shiny, tutorial to learn shiny is available at shiny [homepage](http://shiny.rstudio.com/). Not only tutorial, shiny apps gallery and articles are also available. So much we can learn, so much we can do with shiny. Before we start shiny, we need to install `shiny` package.
 
-I am assuming you are familiar with shinyapp. If not, a great material to learn shiny is available at shiny [homepage](http://shiny.rstudio.com/)
+```r
+install.packages("shiny")
+```
+
+Once the package is installed, we can run a demo to confirm whether the installation went through smoothly.
+
+```r
+require(shiny)
+runExample("01_hello")
+```
+
