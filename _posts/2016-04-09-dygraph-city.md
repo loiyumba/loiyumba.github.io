@@ -70,6 +70,8 @@ We can save this data to our local directory so that we can put this data into t
 write.csv(india, "india.csv", row.names = FALSE) # to save the data)
 ```
 
-# Shiny app
+# Shiny app 
+ --- 
+ 
 
 I am assuming you are familiar with shinyapp. If not, a great material to learn shiny is available at shiny [homepage](http://shiny.rstudio.com/)
