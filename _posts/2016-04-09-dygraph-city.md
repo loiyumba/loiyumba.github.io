@@ -204,8 +204,6 @@ Our *ui* code is complete. The overall *ui* code looks like this
 
 ```r
 ui <- fluidPage(
-   
-   # Application title
    titlePanel("Average Temperature of Indian Cities"),
    sidebarLayout(
       sidebarPanel(
@@ -229,6 +227,20 @@ ui <- fluidPage(
    )
 )
 ```
+
+### Server part
+
+The *server* function comes with two arguments - `input` and `output`. `input` is a list we read values from and `output` is a list we will write values to. `input` will contain all the values of all different inputs we have defined in the *ui* part. Similarly, `output` is where we will save output objects(in our case - dygraph) to display in our app. Also, whatever we want to achieve with our data, we have to do it in the *server* part. In our app, the table is in data.table format and in order for dygraph to take, we have to change the table into time series format, and we define all these in the *server* part. Also, we are going to use `reactive` function so that everytime a user enter a city and click on submit, the code will automatically bring up the time series graph of that city. So it's going to look like this for the first few lines.
+
+```r
+server <- function(input, output) {
+  enter_city <- reactive({
+    validate(
+      need(input$text != "", "Plot will be here when you enter a city")
+       )
+```
+
+When a user land at the app, since the text input is empty, it'll show an error message instead of graph. So the shiny functions `validate` and `need` are used to hide the error message and change it to some meaningful message. In our case, we used *"Plot will be here when you enter a city"*.
 
 
 
