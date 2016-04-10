@@ -91,7 +91,6 @@ runExample("01_hello")
 
 Shiny app is made of two parts - *ui* and *server*. *ui* is the web page/document that we see. Whatever we want users to see on shiny app is made in *ui*. The *server* is the function that powers the shiny app to run. Whatever the users interact with on shiny app *ui*, it's the server that helps to execute it seamlessly. So we build the *ui* and *server* to get shiny app.
 
-### UI
 
 First we will create an empty shiny app. All shiny apps follow the same template.
 
@@ -101,6 +100,13 @@ ui <- fluidpage()
 server <- function(input, output){}
 shinyApp(ui = ui, server = server)
 ```
+
+To successfully run this app, we have to save it as **app.R**. And the data should be in the same folder where this **app.R** is. Once we save it, we will see something like this in our rstudio console.
+
+[![shinylook]({{ site.url }}/img/temperature/shiny-runapp.png)]({{ site.url }}/img/temperature/shiny-runapp.png)
+
+
+
 
 
 
