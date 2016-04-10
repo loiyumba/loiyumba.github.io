@@ -129,7 +129,7 @@ ui <- fluidpage(
          sidebarPanel(
 ```
 
-Since our input option is text input, we will have the option to enter text. There are many other input options and controls are available for shiny app. For more info on input options and controls, please see the shiny home page. In our case, we go ahead and add *textInput* function so that users can enter city name.
+Since our input option is text input, we will have the option to enter text. There are many other input options and controls in shiny. For more info on input options and controls, please see the shiny home page. In our case, we go ahead and add *textInput* function so that users can enter city name.
 
 ```r
 ui <- fluidpage(
