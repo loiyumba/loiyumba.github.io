@@ -93,4 +93,15 @@ Shiny app is made of two parts - *ui* and *server*. *ui* is the web page/documen
 
 ### UI
 
+First we will create an empty shiny app. All shiny apps follow the same template.
+
+```r
+require(shiny)
+ui <- fluidpage()
+server <- function(input, output){}
+shinyApp(ui = ui, server = server)
+```
+
+
+
 
