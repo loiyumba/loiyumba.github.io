@@ -363,6 +363,14 @@ And finally, the screen shot where the mouse is over the graph at a particular p
 
 To access the app, please click [here](https://loiyumba.shinyapps.io/Global_Temp/)
 
+# Resources  
+To learn more about shiny and its applications:
+* [Stackoverflow](http://stackoverflow.com/questions/tagged/shiny)  
+* [Google group](https://groups.google.com/forum/#!forum/shiny-discuss)
+* [Useful articles](http://shiny.rstudio.com/articles/)
+* [Shiny rmarkdown](http://rmarkdown.rstudio.com/authoring_shiny.html)
+* [Share your shiny apps online](http://www.shinyapps.io/)
+
 Once you load the `shiny` package in your rstudio console, you can always do help function for any `shiny` function to know its arguments and usage. For example- `?shinyApp`, `?validate`, `?renderDygraph` and so on.
 
-Thank you for reading and if you have questions, please leave it in the comment section below.
+Thank you for reading!
