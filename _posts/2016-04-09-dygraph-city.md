@@ -364,6 +364,7 @@ And finally, the screen shot where the mouse is over the graph at a particular p
 To access the app, please click [here](https://loiyumba.shinyapps.io/Global_Temp/)
 
 # Resources  
+---
 To learn more about shiny and its applications:  
 * [Stackoverflow](http://stackoverflow.com/questions/tagged/shiny)  
 * [Google group](https://groups.google.com/forum/#!forum/shiny-discuss)  
