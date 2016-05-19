@@ -28,7 +28,6 @@ Here is the filtered table of four states from 2011 census data -
 | Tripura   |  17,99,541    |   10,78,931          |        1,25,235                 |     
 
 We can check the difference of 'Total married women' and 'Total married women with no child' for each state by percentage. This will tell us which state is highest in fertility rate and which state is not. We simply do   
-
 > Percentage of Total married women = Total married women / Total women    
 > Percentage of Total married women with no child = Total married women with no child / Total married women    
 
