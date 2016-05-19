@@ -116,7 +116,19 @@ Age    | Total women | Married women | 0 child  | % of married women | % of marr
 65-69  |   35436     |   35014       |   2399   |       99           |              7
 70-74  |   26789     |   26543       |   2029   |       99           |              8 
 75-79  |   15827     |   15692       |   1244   |       99           |              8
-80+    |   22054     |   21414       |   1987   |       97           |              9     
+80+    |   22054     |   21414       |   1987   |       97           |              9        
+
+To further understand clearly, I will sum the numbers of Total women, Married women and 0 child from age range 20-34 i.e. the first three age ranges. This is the prime age for fertility. And whichever state is high in this could mean only one thing - warning of infertility.   
+
+State  |  Age  | Total women | Married women | 0 child | % of married women | % of married women with no child
+------ |-------|-------------|---------------|---------|--------------------|---------------------------------
+Manipur | 20-34 | 391060     | 232288         | 59728  |     59             |          26       
+Nagaland| 20-34 | 261316     | 151569         | 31997  |     58             |          21   
+Meghalaya| 20-34 | 366348    | 274195         | 53672  |     75             |          20    
+Tripura | 20-34 | 496246     | 413806         | 60627  |     83             |          15       
+
+As expected, Manipur is doing worst. Tripura is going good. 83% women are married between age 20-34 and women with no child is only 15%. 
+
 
 
 
