@@ -8,15 +8,15 @@ fb-img:
 Fertility data is available on Govt. census [portal](http://www.censusindia.gov.in/2011census/population_enumeration.html), but I have 
 never tried to look at it until this article was published on [kanglaonline](http://kanglaonline.com/2016/05/manipuri-women-infertility-suspected-on-food/).
 Some of the comments rejected the claim made by the article. Since the article is not supported by data, the claim made by the article
-is weak as per by some of the comments. I have some female friends who got married at early 30's and some of them did have some problem
-conceiving and some of them didn't have any problem. I didn't know the conceiving problem is at large scale in my state - Manipur as pointed
+is weak as per some of the comments. I have some female friends who got married at early 30's and some of them did have some problem
+conceiving and some of them didn't have any problem. I didn't know the infertility problem is at large scale in my state - Manipur as pointed
 by the article. I will not know the causes of infertility as pointed by the article which says it may be because of many factors which include
-our food habit like eating fermented fish and dried fish. If we look at the present scenario, not just infertility, overall health is impacting
+our food habit like eating fermented fish and dried fish. If we look at the present scenario, not just infertility, overall health is impacted
 because of food adulteration, all type of pollutions and stressfull lifestyle. What I can know is how large the infertility problem is in
 Manipur. So I thought of looking at the 2011 census data on fertility. At least, data will show some insights. I will compare fertility data
 of Manipur with some other states with almost equal women population. This way we will know where Manipur stands in fertility compare to these states. I found women population of Nagaland, Meghalaya and Tripura
-share the number closer than any other state. Nagaland's women population is less than Manipur's while Meghalaya's and Tripura's women
-population is more.   
+share the number closer to Manipur's women population than any other state. Nagaland's women population is less than Manipur's while Meghalaya's and Tripura's women
+population are more.   
 
 Here is the filtered table of four states from 2011 census data -   
 
@@ -28,8 +28,9 @@ Here is the filtered table of four states from 2011 census data -
 | Tripura   |  17,99,541    |   10,78,931          |        1,25,235                 |     
 
 We can check the difference of 'Total married women' and 'Total married women with no child' for each state by percentage. This will tell us which state is highest in fertility rate and which state is not. We simply do   
+
 > Percentage of Total married women = Total married women / Total women    
-> Percentage of Total married women with no child = Total married women with no child / Total married women  
+> Percentage of Total married women with no child = Total married women with no child / Total married women    
 
 Here is the calculated percentage table -    
 
