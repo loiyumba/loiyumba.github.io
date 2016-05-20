@@ -2,7 +2,7 @@
 layout: post
 title: Fertility data analysis of Manipur
 subtitle: Study of fertility from 2011 census data
-fb-img: 
+fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/fertility/ne.png
 ---
 
 Fertility data is available on Govt. census [portal](http://www.censusindia.gov.in/2011census/population_enumeration.html), but I have 
@@ -130,7 +130,11 @@ Tripura | 20-34 | 4,96,246     | 4,13,806         | 60,627  |     83            
 
 As expected, Manipur is highest in infertility among the four states and Tripura is doing best. 83% women are married between age 20-34 and women with no child is only 15% in Tripura.   
 
-Lets check for the entire northeast states.   
+Lets check for the entire northeast states. Instead of putting up dull looking table again and again, I will show the data in plot. The plot will interpret the number at first glance.    
+
+[![ne]({{ site.url }}/img/fertility/ne.png)]({{ site.url }}/img/fertility/ne.png)  
+
+
 
 
 
