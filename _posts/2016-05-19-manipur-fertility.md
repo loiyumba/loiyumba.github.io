@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fertility data analysis of Manipur
+title: What's wrong with Manipur's fertility?
 subtitle: Study of fertility from 2011 census data
 fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/fertility/ne.png
 ---
@@ -162,39 +162,4 @@ It doesn't matter whether a woman is from rural areas or urban areas, low fertil
 
 What I can conclude from this data is - something is wrong with Manipur's fertility. Now, stress, food adulteration, various pollutions and food habit do impact overall health including fertility and this is true for all over India, but why the percentage of marrried women with no child is so high in Goa and Manipur than rest of the states in India. The article posted on kanglaonline do pointed some causes and a paragraph **Advice from Doctor** has a line which says "Try to get pregnant during optimal conceivable age". If you look at the above plot which shows all India, Tripura is the lowest. If you look at the table of four states, Tripura's married women percentage for age range 20-34 is 83% whereas Manipur's is 59%. So one immediate suggestion is   
 
-> Get married as early as possible and get pregnant as early as possible
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> Get married as early as possible and get pregnant as early as possible!
