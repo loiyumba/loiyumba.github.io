@@ -132,7 +132,13 @@ As expected, Manipur is highest in infertility among the four states and Tripura
 
 Lets check for the entire northeast states. Instead of putting up dull looking table again and again, I will show the data in plot. The plot will interpret the number at first glance.    
 
-[![ne]({{ site.url }}/img/fertility/ne.png)]({{ site.url }}/img/fertility/ne.png)  
+[![ne]({{ site.url }}/img/fertility/ne.png)]({{ site.url }}/img/fertility/ne.png)    
+
+The number sitting on top of each bar is the percentage of married women with no child for age range 20-34, and Manipur is highest among the northeast states. I want to see where does Manipur stand in India. Do we have the highest percentage of married women with no child in the country. If that's the case then, it's time for the concern department to do something quick.   
+
+Here is the plot for all India.   
+
+[![india]({{ site.url }}/img/fertility/allindia.png)]({{ site.url }}/img/fertility/allindia.png)
 
 
 
