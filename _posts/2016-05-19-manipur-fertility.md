@@ -119,7 +119,7 @@ Age    | Total women | Married women | 0 child  | % of married women | % of marr
 75-79  |   15,827     |   15,692       |   1,244   |       99           |              8
 80+    |   22,054     |   21,414       |   1,987   |       97           |              9        
 
-To further summarise, I will sum the numbers of Total women, Married women and 0 child from age range 20-34 i.e. the first three age ranges and calculate the percentage once again. This age ranges are the prime age for fertility. And whichever state come up with high percentage could mean only one thing - warning of infertility.   
+To further summarise, I will sum the numbers of Total women, Married women and 0 child from age range 20-34 i.e. the first three age ranges and calculate the percentage once again. These age ranges are the prime age for fertility.   
 
 State  |  Age  | Total women | Married women | 0 child | % of married women | % of married women with no child
 ------ |-------|-------------|---------------|---------|--------------------|---------------------------------
@@ -128,13 +128,13 @@ Nagaland| 20-34 | 2,61,316     | 1,51,569         | 31,997  |     58            
 Meghalaya| 20-34 | 3,66,348    | 2,74,195         | 53,672  |     75             |          20    
 Tripura | 20-34 | 4,96,246     | 4,13,806         | 60,627  |     83             |          15       
 
-As expected, Manipur is highest in infertility among the four states and Tripura is doing best. 83% women are married between age 20-34 and women with no child is only 15% in Tripura.   
+As expected, Manipur is highest in infertility among the four states and Tripura is doing best. 83% women are married and women with no child is only 15% in Tripura.    
 
 Lets check for the entire northeast states. Instead of putting up dull looking table again and again, I will show the data in plot. The plot will interpret the number at first glance.    
 
 [![ne]({{ site.url }}/img/fertility/ne.png)]({{ site.url }}/img/fertility/ne.png)    
 
-The number sitting on top of each bar is the percentage of married women with no child for age range 20-34, and Manipur is highest among the northeast states. I want to see where does Manipur stand in India. Do we have the highest percentage of married women with no child in the country. If that's the case then, it's time for the concern department to do something quick faction to fix this 
+The number sitting on top of each bar is the percentage of married women with no child for age range 20-34, and Manipur is highest among the northeast states. I want to see where does Manipur stand in India. Do we have the highest percentage of married women with no child in the country. If that's the case then, it's time for the concern department to fix this.   
 
 Here is the plot for all India.   
 
@@ -152,14 +152,16 @@ The fertility data is further categorised by education level as well.
 
 [![edu]({{ site.url }}/img/fertility/edu.png)]({{ site.url }}/img/fertility/edu.png)    
 
-The percentage of married women with no child is highest among the graduate and above education level category. May be gaining more educational knowledge must have compelled to plan for family but no child at all is little advance thought in my opinion.   
+The percentage of married women with no child is highest among the graduate and above. May be gaining more educational knowledge brought the idea of family planning but no child at all is little advance thought in my opinion.     
 
 I don't want to go on and on. I will end this with one last plot. The plot to see whether percentage of married women with no child is highest among urban or rural. Even before I see the data, even before I make the plot, I assume it is high in urban women population compare to rural. Lets see whether my assumption is wrong!    
 
 [![region]({{ site.url }}/img/fertility/region.png)]({{ site.url }}/img/fertility/region.png)    
 
-It doesn't matter whether a woman is from rural areas or urban areas, low fertility among married women age range 20-34 is same!  
+And it is WRONG! It doesn't matter whether a woman is from rural areas or urban areas, low fertility among married women age range 20-34 is same!  
 
 What I can conclude from this data is - something is wrong with Manipur's fertility. Now, stress, food adulteration, various pollutions and food habit do impact overall health including fertility and this is true for all over India, but why the percentage of marrried women with no child is so high in Goa and Manipur than rest of the states in India. The article posted on kanglaonline do pointed some causes and a paragraph **Advice from Doctor** has a line which says "Try to get pregnant during optimal conceivable age". If you look at the above plot which shows all India, Tripura is the lowest. If you look at the table of four states, Tripura's married women percentage for age range 20-34 is 83% whereas Manipur's is 59%. So one immediate suggestion is   
 
-> Get married as early as possible and get pregnant as early as possible!
+> Get married as early as possible and get pregnant as soon as possible!   
+
+Thanks for reading till the here.
