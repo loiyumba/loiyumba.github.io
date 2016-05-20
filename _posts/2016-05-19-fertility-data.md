@@ -41,7 +41,7 @@ Here is the calculated percentage table -
 | Meghalaya| 44.58               |   16.97                          |
 | Tripura  | 59.95               |   11.60                          |  
 
-From the above table, we can easily point out that percentage of married women with no child in Manipur is highest among the four states which do inform us that infertility is indeed high in our state. Lets break down the data further by age group for all the states. The original data categorize the ages of women into few age categories like "less than 15", "15-19", "20-24" and so on. It's understandable if a married woman whose age is less than 20 years doesn't have a child. So better to check the number of women whose age is 20 years and above with no child. Again, we cannot conclude entirely these total number of childless married women is by-choice childless or not, specially younger married women. Lets see the table first to understand better. The columns from Age to 0 child is from the original data. I have added two new columns `% of married women` and `% of married women with no child` for each age interval like I have done in the above table.  
+From the above table, we can easily point out that percentage of married women with no child in Manipur is highest among the four states which do inform us that infertility is indeed high in our state. Lets break down the data further by age group for all the states. The original data categorized the ages of women into few age categories like "less than 15", "15-19", "20-24" and so on. It's understandable if a married woman whose age is less than 20 years doesn't have a child. So better to check the number of women whose age is 20 years and above with no child. Again, we cannot conclude entirely these total number of childless married women is by-choice childless or not, specially younger married women. Lets see the table first to understand better. The columns from Age to 0 child is from the original data. I have added two new columns `% of married women` and `% of married women with no child` for each age interval like I have done in the above table.  
 
 Breakdown of data by age intervals for **Manipur**   
 
@@ -134,11 +134,24 @@ Lets check for the entire northeast states. Instead of putting up dull looking t
 
 [![ne]({{ site.url }}/img/fertility/ne.png)]({{ site.url }}/img/fertility/ne.png)    
 
-The number sitting on top of each bar is the percentage of married women with no child for age range 20-34, and Manipur is highest among the northeast states. I want to see where does Manipur stand in India. Do we have the highest percentage of married women with no child in the country. If that's the case then, it's time for the concern department to do something quick.   
+The number sitting on top of each bar is the percentage of married women with no child for age range 20-34, and Manipur is highest among the northeast states. I want to see where does Manipur stand in India. Do we have the highest percentage of married women with no child in the country. If that's the case then, it's time for the concern department to do something quick faction to fix this 
 
 Here is the plot for all India.   
 
-[![india]({{ site.url }}/img/fertility/allindia.png)]({{ site.url }}/img/fertility/allindia.png)
+[![india]({{ site.url }}/img/fertility/allindia.png)]({{ site.url }}/img/fertility/allindia.png)   
+
+Something is not right with Goa and Manipur!    
+
+How about fertility rate in Manipur by religious communities? Is fertility somehow relate to certain communities nature or behaviour. Lets check that also.    
+
+[![religion]({{ site.url }}/img/fertility/Rplot.png)]({{ site.url }}/img/fertility/Rplot.png)    
+
+Among the religious communities, percentage of muslim married women with no child is the lowest. We can ignore other religious communities like Jain, Sikh and Buddhist because their population is very less compare to Hindu, Other, Christian and Muslim.  
+
+
+
+
+
 
 
 
