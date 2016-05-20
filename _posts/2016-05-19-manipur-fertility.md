@@ -10,7 +10,7 @@ never tried to look at it until this article was published on [kanglaonline](htt
 Some of the comments rejected the claim made by the article. Since the article is not supported by data, the claim made by the article
 is weak as per some of the comments. I have some female friends who got married at early 30's and some of them did have some problem
 conceiving and some of them didn't have any problem. I didn't know the infertility problem is at large scale in my state - Manipur. I will not know the causes of infertility as pointed by the article which says it may be because of many factors which include
-our food habit like eating fermented fish and dried fish. If we look at the present scenario, not just infertility, overall health is impacted
+our food habit like eating fermented fish and dried fish. If we look at the present situation, not just infertility, overall health is impacted
 because of food adulteration, all type of pollutions and stressfull lifestyle. What I can know is how large the infertility problem is in
 Manipur. So I thought of looking at the 2011 census data on fertility. At least, data will show some insights. I will compare fertility data
 of Manipur with some other states with almost equal women population. This way we will know where Manipur stands in fertility compare to these states. I found women population of Nagaland, Meghalaya and Tripura
