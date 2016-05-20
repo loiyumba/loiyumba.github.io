@@ -9,8 +9,7 @@ Fertility data is available on Govt. census [portal](http://www.censusindia.gov.
 never tried to look at it until this article was published on [kanglaonline](http://kanglaonline.com/2016/05/manipuri-women-infertility-suspected-on-food/).
 Some of the comments rejected the claim made by the article. Since the article is not supported by data, the claim made by the article
 is weak as per some of the comments. I have some female friends who got married at early 30's and some of them did have some problem
-conceiving and some of them didn't have any problem. I didn't know the infertility problem is at large scale in my state - Manipur as pointed
-by the article. I will not know the causes of infertility as pointed by the article which says it may be because of many factors which include
+conceiving and some of them didn't have any problem. I didn't know the infertility problem is at large scale in my state - Manipur. I will not know the causes of infertility as pointed by the article which says it may be because of many factors which include
 our food habit like eating fermented fish and dried fish. If we look at the present scenario, not just infertility, overall health is impacted
 because of food adulteration, all type of pollutions and stressfull lifestyle. What I can know is how large the infertility problem is in
 Manipur. So I thought of looking at the 2011 census data on fertility. At least, data will show some insights. I will compare fertility data
