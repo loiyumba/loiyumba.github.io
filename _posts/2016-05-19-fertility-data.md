@@ -146,7 +146,17 @@ How about fertility rate in Manipur by religious communities? Is fertility someh
 
 [![religion]({{ site.url }}/img/fertility/Rplot.png)]({{ site.url }}/img/fertility/Rplot.png)    
 
-Among the religious communities, percentage of muslim married women with no child is the lowest. We can ignore other religious communities like Jain, Sikh and Buddhist because their population is very less compare to Hindu, Other, Christian and Muslim.  
+Among the religious communities, percentage of muslim married women with no child is the lowest. We can ignore other religious communities like Jain, Sikh and Buddhist because their population is less compare to Hindu, Other, Christian and Muslim. If we ignore Jain and Buddhist, then percentage of married women with no child in the age range 20-34 is highest in Christian community.   
+
+The fertility data is further categorised by education level as well.    
+
+[![edu]({{ site.url }}/img/fertility/edu.png)]({{ site.url }}/img/fertility/edu.png)    
+
+
+
+
+
+
 
 
 
