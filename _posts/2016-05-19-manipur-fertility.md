@@ -163,14 +163,15 @@ What I can conclude from this data is - something is wrong with Manipur's fertil
 
 > Get married as early as possible and get pregnant as soon as possible!   
 
-I know it was boring, but thanks for reading till the end.   
+I know it was boring, but thanks for reading till the end.     
+------
 
-## Update(23-05-2016)  
+### Update(23-05-2016)  
 The above summary was on 2011 census data. I realised it will be wise to see the 2001 and 1991 census data as well for the same. By looking at 20 years of data, we can at least know whether fertility rate was always low, constant or getting better. Note that I am taking only age range 20-34.    
 
 |  Year | Total women | Married women | 0 child | % of married women | % of married women with no child
 |-------|-------------|---------------|---------|--------------------|---------------------------------
-| 1991  |   -         |  1,50,484     | 38,412  |           -        |          25.52       
+| 1991  |    -        |  1,50,484     | 38,412  |           -        |          25.52       
 | 2001  | 2,89,135    |  1,69,147     | 41,957  |         58.50      |          24.80  
 | 2011  | 3,91,060    |  2,32,288     | 59,728  |         59.39      |          25.71      
 
