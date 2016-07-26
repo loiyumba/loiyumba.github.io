@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Major Earthquakes in Indian subcontinent
-subtitle: Interactive map power by Shiny
+subtitle: Interactive map- Shiny app
 ---
 
 We get data and the next thing is what can we do with it. We dig in and look for insights to get more detail. The most basic thing we can do
