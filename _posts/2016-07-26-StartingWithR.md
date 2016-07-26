@@ -32,3 +32,4 @@ less explanation and more examples. The topics covered in the slides are:
 23. Missing Values   
 24. Dates and Times   
 
+To view the slides - [Starting with R](http://rpubs.com/Loy/StartingWithR)
