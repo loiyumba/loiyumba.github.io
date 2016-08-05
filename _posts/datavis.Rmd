@@ -1,0 +1,181 @@
+---
+title: "Data Visualization"
+author: "Loiyumba"
+output: html_document
+---
+
+Data Visualization using ggvis package
+=======================================
+
+ggvis is a data visualization package in R. There are other data visualization packages such as -    
+1. Base graphic   
+2. lattice    
+3. ggplot2 (most popular), and    
+4. ggvis (latest and evolving)
+
+
+Install ggvis
+==============================
+
+Install the package from CRAN
+```{r eval=FALSE}
+install.package('ggvis')
+```
+
+Load into current session
+```{r}
+library(ggvis)    
+```   
+
+To get more info on the package
+```{r eval=FALSE}
+help(package = 'ggvis)  
+```     
+
+
+Scatter plots
+==============================
+
+We want to see the relation between weight and miles per gallon in mtcars dataset.
+```{r}
+mtcars %>% ggvis(~wt, ~mpg) %>% layer_points()
+```    
+
+
+We can add more variables to the plot by mapping them to other visual properties like `fill`, `stroke`, `size` and `shape`.
+
+```{r}
+mtcars %>%
+  ggvis(~mpg, ~disp, fill := 'green', stroke := 'black', size := 300,    opacity := 0.5) %>%
+  layer_points()
+```     
+
+```{r}
+mtcars %>% ggvis(~wt, ~mpg, fill := 'green', stroke := 'black', size := 50, shape := 'diamond', opacity := 0.5) %>% layer_points()
+```   
+
+Adding a smooth line
+```{r}
+mtcars %>% ggvis(~wt, ~mpg) %>%
+  layer_points() %>%
+  layer_smooths()
+```    
+
+
+Scatter plots with grouping.    
+
+```{r}
+mtcars %>%
+  ggvis(~wt, ~mpg, fill = ~factor(cyl)) %>%
+  layer_points()
+
+mtcars %>%
+  ggvis(~wt, ~mpg, stroke = ~factor(cyl)) %>%
+  layer_points()
+
+mtcars %>%
+  ggvis(~mpg, ~disp, shape = ~factor(cyl)) %>%
+  layer_points()
+```   
+
+
+Bar Graphs
+=========================
+
+```{r}
+mtcars %>% 
+  ggvis(~factor(cyl), ~mpg, fill := "#ace600") %>% 
+  layer_bars()
+```   
+
+We will load another inbuilt dataset and plot the bar plots.
+```{r}
+head(pressure)
+pressure %>% 
+  ggvis(~temperature, ~pressure, fill := '#ff9999') %>% 
+  layer_bars()
+```    
+
+```{r}
+pressure %>% 
+  ggvis(~temperature, ~pressure, fill := '#8cb3d9') %>% 
+  layer_bars(width = 15)
+```    
+
+
+Line Graphs
+====================
+
+```{r}
+pressure %>% 
+  ggvis(~temperature, ~pressure) %>% 
+  layer_lines()
+```
+
+Line with points
+```{r}
+pressure %>% 
+  ggvis(~temperature, ~pressure) %>% 
+  layer_lines(stroke := 'red') %>% 
+  layer_points(fill := '#8cb3d9')
+```    
+
+
+Histograms
+======================================
+
+We use another built-in data set `faithful`
+```{r}
+head(faithful)
+```   
+
+Basic histogram
+```{r}
+faithful %>% 
+  ggvis(~eruptions) %>% 
+  layer_histograms()
+```   
+
+We can control the bin by specifying `width` and `boundary` or `center`.
+```{r}
+faithful %>% 
+  ggvis(~eruptions) %>% 
+  layer_histograms(width = 0.5, boundary = 0 ,fill := 'blue')
+```  
+
+```{r}
+faithful %>% 
+  ggvis(~eruptions) %>% 
+  layer_histograms(width = 0.25, center = 0 ,fill := '#ff9999') %>% 
+  add_axis("x", title = "Eruptions") %>% 
+  add_axis("y", title = "Counts")
+```   
+
+
+Box plots
+======================
+
+```{r}
+mtcars %>% 
+  ggvis(~factor(cyl), ~mpg) %>% 
+  layer_boxplots(fill := 'red') %>% 
+  add_axis("x", title = "Cylinder") %>% 
+  add_axis("y", title = "Miles per Gallon")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
