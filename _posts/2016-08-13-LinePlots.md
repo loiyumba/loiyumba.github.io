@@ -225,13 +225,28 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
 
 [![8thPlot]({{ site.url }}/img/LinePlots/9th plot.png)]({{ site.url }}/img/LinePlots/9th plot.png)      
 
+We can change to font to xkcd and turn the plot theme into xkcd theme. For this we need to load the `extrafont` package 
 
+```r
+require(extrafont)
+windowsFonts(xkcd=windowsFont("xkcd"))
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  scale_x_continuous(breaks = seq(1,12,1)) +
+  scale_color_manual(values = c("darkslategray", "gold")) +
+  ggtitle("Monthly Bike Rental Count") +
+  labs(x = "Month", y = "Bike Rental Count") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_blank(),
+        plot.title = element_text(size = 20, family = "xkcd"), ###
+        text = element_text(family = "xkcd"), ###
+        axis.text = element_text(size = 12), ###
+        axis.title = element_text(size = 12),  ###
+        panel.grid.minor = element_blank())
+```    
 
+[![xkcd]({{ site.url }}/img/LinePlots/9th plot.png)]({{ site.url }}/img/LinePlots/xkcd.png)    
 
-
-
-
-
-
-
-
+Thanks for reading out. Hope this will help you to construct a line plot using `ggplot2` package easily.    
