@@ -125,11 +125,39 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
 
 [![1stPlot]({{ site.url }}/img/LinePlots/2nd plot.png)]({{ site.url }}/img/LinePlots/2nd plot.png)   
 
+The lines look little thin. So we make it little thick. I am going to add ### for every new line of code.  
 
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) ###
+```   
 
+[![2ndPlot]({{ site.url }}/img/LinePlots/3rd plot.png)]({{ site.url }}/img/LinePlots/3rd plot.png)   
 
+I prefer legend at the bottom    
 
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  theme(legend.position = "bottom", ###
+        legend.direction = "horizontal", ###
+        legend.title = element_blank()) ###
+```   
 
+[![3rdPlot]({{ site.url }}/img/LinePlots/4th plot.png)]({{ site.url }}/img/LinePlots/4th plot.png)   
+
+The x-axis label is not proper. So we make it proper   
+
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  scale_x_continuous(breaks = seq(1,12,1)) + ###
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_blank())
+```    
+
+[![4thPlot]({{ site.url }}/img/LinePlots/5th plot.png)]({{ site.url }}/img/LinePlots/5th plot.png)
 
 
 
