@@ -205,7 +205,27 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
         legend.title = element_blank())
 ```    
 
-[![7thPlot]({{ site.url }}/img/LinePlots/8th plot.png)]({{ site.url }}/img/LinePlots/8th plot.png)
+[![7thPlot]({{ site.url }}/img/LinePlots/8th plot.png)]({{ site.url }}/img/LinePlots/8th plot.png)    
+
+I want to remove the minor gridline and keep just major gridline.   
+
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  scale_x_continuous(breaks = seq(1,12,1)) +
+  scale_color_manual(values = c("darkslategray", "gold")) +
+  ggtitle("Monthly Bike Rental Count") +
+  labs(x = "Month", y = "Bike Rental Count") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_blank(),
+        panel.grid.minor = element_blank()) ###
+```   
+
+[![8thPlot]({{ site.url }}/img/LinePlots/9th plot.png)]({{ site.url }}/img/LinePlots/9th plot.png)      
+
+
 
 
 
