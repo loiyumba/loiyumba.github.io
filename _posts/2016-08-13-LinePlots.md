@@ -5,7 +5,7 @@ subtitle: Construction of line plot using ggplot2 package
 fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/LinePlots/2nd plot.png
 ---
 
-This tutorial is on the line with visualization tutorial that I am doing using `ggplot2` package. I have done on how to construct bar plot in
+This tutorial is on the line with visualization tutorial that I am doing using `ggplot2` package. I have done on how to construct bar plot
 with `ggplot2` package in my earlier post. All the post are meant for new learners. I do often stuck at choosing dataset for my tutorial.
 After few thoughts, I have decided to use kaggle dataset on [Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing-demand). Like
 everyone else, I have also started participating kaggle competition with **Titanic** and at that time I had no idea what I was doing. My 
@@ -225,7 +225,7 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
 
 [![8thPlot]({{ site.url }}/img/LinePlots/9th plot.png)]({{ site.url }}/img/LinePlots/9th plot.png)      
 
-We can change to font to xkcd and turn the plot theme into xkcd theme. For this we need to load the `extrafont` package 
+We can change the font to xkcd and turn the plot theme into xkcd theme. For this we need to load the `extrafont` package 
 
 ```r
 require(extrafont)
@@ -247,6 +247,6 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
         panel.grid.minor = element_blank())
 ```    
 
-[![xkcd]({{ site.url }}/img/LinePlots/9th plot.png)]({{ site.url }}/img/LinePlots/xkcd.png)    
+[![xkcd]({{ site.url }}/img/LinePlots/xkcd.png)]({{ site.url }}/img/LinePlots/xkcd.png)    
 
 Thanks for reading out. Hope this will help you to construct a line plot using `ggplot2` package easily.    
