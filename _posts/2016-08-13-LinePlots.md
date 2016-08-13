@@ -114,7 +114,19 @@ Groups: year [1]
 4  2011     4  94870
 5  2011     5 135821
 6  2011     6 143512
-```
+```    
+
+The data is ready and the first line plot is below.    
+
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity")
+```   
+
+[![1stPlot]({{ site.url }}/img/LinePlots/2nd plot.png)]({{ site.url }}/img/LinePlots/2nd plot.png)   
+
+
+
 
 
 
