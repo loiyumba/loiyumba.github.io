@@ -157,7 +157,61 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
         legend.title = element_blank())
 ```    
 
-[![4thPlot]({{ site.url }}/img/LinePlots/5th plot.png)]({{ site.url }}/img/LinePlots/5th plot.png)
+[![4thPlot]({{ site.url }}/img/LinePlots/5th plot.png)]({{ site.url }}/img/LinePlots/5th plot.png)    
+
+We add plot title and properly name axes titles too.
+
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  scale_x_continuous(breaks = seq(1,12,1)) +
+  ggtitle("Monthly Bike Rental Count") + ###
+  labs(x = "Month", y = "Bike Rental Count") + ###
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_blank())
+```    
+
+[![5thPlot]({{ site.url }}/img/LinePlots/6th plot.png)]({{ site.url }}/img/LinePlots/6th plot.png)   
+
+Change the colour of the lines
+
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  scale_x_continuous(breaks = seq(1,12,1)) +
+  scale_color_manual(values = c("darkslategray", "gold")) + ###
+  ggtitle("Monthly Bike Rental Count") +
+  labs(x = "Month", y = "Bike Rental Count") +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_blank())
+```    
+
+[![6thPlot]({{ site.url }}/img/LinePlots/7th plot.png)]({{ site.url }}/img/LinePlots/7th plot.png)  
+
+Remove the grey background
+
+```r
+ggplot(newDay, aes(x = month, y = Total, colour = year)) +
+  geom_line(stat = "identity", size = 1.5) +
+  scale_x_continuous(breaks = seq(1,12,1)) +
+  scale_color_manual(values = c("darkslategray", "gold")) +
+  ggtitle("Monthly Bike Rental Count") +
+  labs(x = "Month", y = "Bike Rental Count") +
+  theme_bw() + ###
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_blank())
+```    
+
+[![7thPlot]({{ site.url }}/img/LinePlots/8th plot.png)]({{ site.url }}/img/LinePlots/8th plot.png)
+
+
+
+
+
+
 
 
 
