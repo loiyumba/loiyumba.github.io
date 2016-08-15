@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Line Plot in ggplot2
-subtitle: Construction of line plot using ggplot2 package
+subtitle: Constructing line plot using ggplot2 package
 fb-img: https://github.com/loiyumba/loiyumba.github.io/blob/master/img/LinePlots/2nd plot.png
 ---
 
 This tutorial is on the line with visualization tutorial that I am doing using `ggplot2` package. I have done on how to construct bar plot
-with `ggplot2` package in my earlier post. All the post are meant for new learners. I do often stuck at choosing dataset for my tutorial.
+with `ggplot2` package in my earlier [post](http://loiyumba.github.io/2016-08-01-eurocup2016vis/). All the post are meant for new learners. I do often stuck at choosing dataset for my tutorial.
 After few thoughts, I have decided to use kaggle dataset on [Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing-demand). Like
 everyone else, I have also started participating kaggle competition with **Titanic** and at that time I had no idea what I was doing. My 
-actual initial learning started with **Bike Sharing Demand** competition. Though there were multiple dataset in **Bike Sharing Demand**
+actual initial learning started with **Bike Sharing Demand** competition. Though there were multiple datasets in **Bike Sharing Demand**
 competition, I am going to use a dataset call 'Day'.     
 
 I load all the libraries needed, set the directory and load the data from the local disk.   
