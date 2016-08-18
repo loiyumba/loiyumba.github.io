@@ -38,7 +38,19 @@ Security personnels fatality was high in Manipur then got lowered between 2008 a
 
 [![terrorist]({{ site.url }}/img/NEinsurgency/terroristPix.png)]({{ site.url }}/img/NEinsurgency/terroristPix.png)     
 
-Insurgents fatality is high in Manipur and Assam. The fatalities of insurgents in Manipur were high in 2008 and 2009, and it's been low since then, followed by Assam. Nagaland too had high fatalities of insurgents during 2006, 2007 and 2008. 
+Insurgents fatality is high in Manipur and Assam. The fatalities of insurgents in Manipur were high in 2008 and 2009, and it's been low since then, followed by Assam. Nagaland too had high fatalities of insurgents during 2006, 2007 and 2008.     
+
+How about ordering states by number of total fatalities of civilians, security personnels and insurgents? We can do so.    
+
+[![totalcivilians]({{ site.url }}/img/NEinsurgency/civilians_totalPix.png)]({{ site.url }}/img/NEinsurgency/civilians_totalPix.png)   
+
+[![totalsecurity]({{ site.url }}/img/NEinsurgency/security_totalPix.png)]({{ site.url }}/img/NEinsurgency/security_totalPix.png)   
+
+[![totalinsurgents]({{ site.url }}/img/NEinsurgency/terrorist_totalPix.png)]({{ site.url }}/img/NEinsurgency/terrorist_totalPix.png)    
+
+
+
+
 
 
 
