@@ -29,8 +29,16 @@ Let's look at the total fatalities in the last 10 years because of insurgency.
 Good news is fatalities is trending low since 2005. Fatalities of security personnel has been almost constant in the last 10 years. Let's break it down by states.   
 
 [![civilians]({{ site.url }}/img/NEinsurgency/civiliansPix.png)]({{ site.url }}/img/NEinsurgency/civiliansPix.png)      
+
+Civilians fatality was always high in Assam followed by Manipur. Rest of the states were constantly low compare to Assam and Manipur.   
+
 [![security]({{ site.url }}/img/NEinsurgency/securityPix.png)]({{ site.url }}/img/NEinsurgency/securityPix.png)     
-[![terrorist]({{ site.url }}/img/NEinsurgency/terroristPix.png)]({{ site.url }}/img/NEinsurgency/terroristPix.png)    
+
+Security personnels fatality was high in Manipur then got lowered between 2008 and 2014 and suddenly spiked in 2015. Assam too noticed high fatality of security personnels but the trend is going downward. Tripura also witnessed high fatality of security personnels during 2005, 2006 and 2007.    
+
+[![terrorist]({{ site.url }}/img/NEinsurgency/terroristPix.png)]({{ site.url }}/img/NEinsurgency/terroristPix.png)     
+
+Insurgents fatality is high in Manipur and Assam. The fatalities of insurgents in Manipur were high in 2008 and 2009, and it's been low since then, followed by Assam. Nagaland too had high fatalities of insurgents during 2006, 2007 and 2008. 
 
 
 
