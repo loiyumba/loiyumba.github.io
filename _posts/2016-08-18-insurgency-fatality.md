@@ -46,7 +46,13 @@ How about ordering states by number of total fatalities of civilians, security p
 
 [![totalsecurity]({{ site.url }}/img/NEinsurgency/security_totalPix.png)]({{ site.url }}/img/NEinsurgency/security_totalPix.png)   
 
-[![totalinsurgents]({{ site.url }}/img/NEinsurgency/terrorist_totalPix.png)]({{ site.url }}/img/NEinsurgency/terrorist_totalPix.png)    
+[![totalinsurgents]({{ site.url }}/img/NEinsurgency/terrorist_totalPix.png)]({{ site.url }}/img/NEinsurgency/terrorist_totalPix.png)   
+
+Manipur and Assam are the most disturbed states in the northeast region of India while Arunachal Pradesh and Mizoram are the most peacegul states.    
+
+R code to extract data from the webpage and to generate plots from data is [here](https://gist.github.com/loiyumba/5aaef1ba5b386b83386b4b6d1c43f2a0).     
+
+Thank you for reading!
 
 
 
