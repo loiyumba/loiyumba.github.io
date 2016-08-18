@@ -24,7 +24,7 @@ stored [here](https://github.com/loiyumba/Dataset/tree/master/NEinsurgency).
 
 Let's look at the civilians killed in the last 10 years because of insurgency. I have categorised by statewise.   
 
-[![civilians]({{ site.url }}/img/NEinsurgency/civilians_totalPix.png)]({{ site.url }}/img/NEinsurgency/civilians_totalPix.png) 
+[![civilians]({{ site.url }}/img/NEinsurgency/civiliansPix.png)]({{ site.url }}/img/NEinsurgency/civiliansPix.png) 
 
 
 
