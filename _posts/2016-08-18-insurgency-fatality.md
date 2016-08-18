@@ -24,7 +24,16 @@ stored [here](https://github.com/loiyumba/Dataset/tree/master/NEinsurgency).
 
 Let's look at the total fatalities in the last 10 years because of insurgency.        
 
-[![total]({{ site.url }}/img/NEinsurgency/TotalFatalitiesPix.png)]({{ site.url }}/img/NEinsurgency/TotalFatalitiesPix.png) 
+[![total]({{ site.url }}/img/NEinsurgency/TotalFatalitiesPix.png)]({{ site.url }}/img/NEinsurgency/TotalFatalitiesPix.png)    
+
+Good news is fatalities is trending low since 2005. Fatalities of security personnel has been almost constant in the last 10 years. Let's break it down by states.   
+
+[![civilians]({{ site.url }}/img/NEinsurgency/civiliansPix.png)]({{ site.url }}/img/NEinsurgency/civiliansPix.png)      
+[![security]({{ site.url }}/img/NEinsurgency/securityPix.png)]({{ site.url }}/img/NEinsurgency/securityPix.png)     
+[![terrorist]({{ site.url }}/img/NEinsurgency/terroristPix.png)]({{ site.url }}/img/NEinsurgency/terroristPix.png)    
+
+
+
 
 
 
