@@ -22,9 +22,9 @@ on for the last 10 years through data visualizations.
 Data is scrapped from [SATP](http://www.satp.org/satporgtp/countries/india/database/fatalitiesnorteast2006.htm) and the cleaned data is
 stored [here](https://github.com/loiyumba/Dataset/tree/master/NEinsurgency). 
 
-Let's look at the civilians killed in the last 10 years because of insurgency. I have categorised by statewise.   
+Let's look at the total fatalities in the last 10 years because of insurgency.        
 
-[![civilians]({{ site.url }}/img/NEinsurgency/civiliansPix.png)]({{ site.url }}/img/NEinsurgency/civiliansPix.png) 
+[![total]({{ site.url }}/img/NEinsurgency/TotalFatalitiesPix.png)]({{ site.url }}/img/NEinsurgency/TotalFatalitiesPix.png) 
 
 
 
