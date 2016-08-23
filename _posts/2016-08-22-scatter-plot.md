@@ -50,7 +50,29 @@ ggplot(diamond, aes(x = carat, y = price)) +
   geom_point(shape = 21)
 ```    
 
-[![shape]({{ site.url }}/img/ScatterPlot/SecondPlot.png)]({{ site.url }}/img/ScatterPlot/SecondPlot.png)    
+[![shape]({{ site.url }}/img/ScatterPlot/SecondPlot.png)]({{ site.url }}/img/ScatterPlot/SecondPlot.png)      
+
+Scale of carat is range from 0.2 to 5.01, and in the plot x-axis scale is from 1 to 5. I am going to break the x-axis scale into smaller part.    
+
+```r
+ggplot(diamond, aes(x = carat, y = price)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25))
+```    
+
+[![scale]({{ site.url }}/img/ScatterPlot/ThirdPlot.png)]({{ site.url }}/img/ScatterPlot/ThirdPlot.png)     
+
+Adding plot title and axes titles.    
+
+```r
+ggplot(diamond, aes(x = carat, y = price)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices By Carat") +
+  labs(x = "Carat", y = "Price")
+```      
+
+[![titles]({{ site.url }}/img/ScatterPlot/FourthPlot.png)]({{ site.url }}/img/ScatterPlot/FourthPlot.png)    
 
 
 
