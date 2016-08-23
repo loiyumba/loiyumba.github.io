@@ -47,17 +47,17 @@ I am going to change the dark point into hollow point so that I can visualize th
 
 ```r
 ggplot(diamond, aes(x = carat, y = price)) +
-  geom_point(shape = 21)
+  geom_point(shape = 21) ###
 ```    
 
 [![shape]({{ site.url }}/img/ScatterPlot/SecondPlot.png)]({{ site.url }}/img/ScatterPlot/SecondPlot.png)      
 
-Scale of carat is range from 0.2 to 5.01, and in the plot x-axis scale is from 1 to 5. I am going to break the x-axis scale into smaller part.    
+Scale of carat is from 0.2 to 5.01, and in the plot x-axis scale is from 1 to 5. I am going to break the x-axis scale into smaller part.    
 
 ```r
 ggplot(diamond, aes(x = carat, y = price)) +
   geom_point(shape = 21) +
-  scale_x_continuous(breaks = seq(0, 5, 0.25))
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) ###
 ```    
 
 [![scale]({{ site.url }}/img/ScatterPlot/ThirdPlot.png)]({{ site.url }}/img/ScatterPlot/ThirdPlot.png)     
@@ -68,11 +68,55 @@ Adding plot title and axes titles.
 ggplot(diamond, aes(x = carat, y = price)) +
   geom_point(shape = 21) +
   scale_x_continuous(breaks = seq(0, 5, 0.25)) +
-  ggtitle("Diamond Prices By Carat") +
-  labs(x = "Carat", y = "Price")
+  ggtitle("Diamond Prices By Carat") + ###
+  labs(x = "Carat", y = "Price") ###
 ```      
 
 [![titles]({{ site.url }}/img/ScatterPlot/FourthPlot.png)]({{ site.url }}/img/ScatterPlot/FourthPlot.png)    
+
+Let's add cut feature as well in the plot.    
+
+```r
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) + ###
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices By Carat") +
+  labs(x = "Carat", y = "Price")
+```    
+
+[![cut]({{ site.url }}/img/ScatterPlot/FifthPlot.png)]({{ site.url }}/img/ScatterPlot/FifthPlot.png)     
+
+The title of the legend is in small. I want to make the first letter capital and bold. Also move the legend to my favorite area of the plot - bottom and in horizontal direction.    
+
+```r
+names(diamond)[2] <- "Cut" # Change the name of the feature from 'cut' to 'Cut'
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) + 
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices By Carat") +
+  labs(x = "Carat", y = "Price") +
+  theme(legend.position = "bottom", ###
+        legend.direction = "horizontal", ###
+        legend.title = element_text(face = "bold")) ###
+```    
+
+[![legend]({{ site.url }}/img/ScatterPlot/SixthPlot.png)]({{ site.url }}/img/ScatterPlot/SixthPlot.png)     
+
+Change the background of the plot from grey to white.   
+
+```r
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices By Carat") +
+  labs(x = "Carat", y = "Price") +
+  theme_bw() + ###
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_text(face = "bold"))
+```    
+
+[![theme]({{ site.url }}/img/ScatterPlot/SeventhPlot.png)]({{ site.url }}/img/ScatterPlot/SeventhPlot.png)   
 
 
 
