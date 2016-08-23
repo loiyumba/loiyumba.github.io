@@ -118,7 +118,92 @@ ggplot(diamond, aes(x = carat, y = price, fill = Cut)) +
 
 [![theme]({{ site.url }}/img/ScatterPlot/SeventhPlot.png)]({{ site.url }}/img/ScatterPlot/SeventhPlot.png)   
 
+I want to move the position of the title towards extreme left.   
 
+```r
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices by Carat and Cut") +
+  labs(x = "Carat", y = "Price") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_text(face = "bold"),
+        plot.title = element_text(hjust = -0.002)) ###
+```    
 
+[![movingtitle]({{ site.url }}/img/ScatterPlot/EightPlot.png)]({{ site.url }}/img/ScatterPlot/EightPlot.png)    
 
+I am going to increase the fonts of axis titles and labels.
 
+```r
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices by Carat and Cut") +
+  labs(x = "Carat", y = "Price") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_text(face = "bold"),
+        plot.title = element_text(hjust = -0.002),
+        axis.text = element_text(size = 11), ###
+        axis.title = element_text(size = 14)) ###
+```   
+
+[![axes]({{ site.url }}/img/ScatterPlot/NinthPlot.png)]({{ site.url }}/img/ScatterPlot/NinthPlot.png)    
+
+Remove the minor grid lines from plot.     
+
+```r
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices by Carat and Cut") +
+  labs(x = "Carat", y = "Price") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_text(face = "bold"),
+        plot.title = element_text(hjust = -0.002),
+        axis.text = element_text(size = 11),
+        axis.title = element_text(size = 14),
+        panel.grid.minor = element_blank()) ###
+```    
+
+[![lines]({{ site.url }}/img/ScatterPlot/TenthPlot.png)]({{ site.url }}/img/ScatterPlot/TenthPlot.png)   
+
+In XKCD style     
+
+```r
+require(extrafont) # For xkcd font
+
+windowsFonts(xkcd=windowsFont("xkcd")) ###
+ggplot(diamond, aes(x = carat, y = price, fill = Cut)) +
+  geom_point(shape = 21) +
+  scale_x_continuous(breaks = seq(0, 5, 0.25)) +
+  ggtitle("Diamond Prices by Carat and Cut") +
+  labs(x = "Carat", y = "Price") +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.title = element_text(face = "bold"),
+        plot.title = element_text(size = 20, family = "xkcd"), ###
+        axis.text = element_text(size = 11),
+        axis.title = element_text(size = 14),
+        text = element_text(family = "xkcd"), ###
+        panel.background = element_blank(), ###
+        axis.line.x = element_line(size = .5, colour = "black"), ###
+        axis.line.y = element_line(size = .5, colour = "black")) ###
+```    
+
+[![xkcd]({{ site.url }}/img/ScatterPlot/xkcd.png)]({{ site.url }}/img/ScatterPlot/xkcd.png)   
+
+Resources
+----    
+
+1. [ggplot2](http://ggplot2.org/)    
+2. [ggplot2 cheatsheet](https://www.rstudio.com/resources/cheatsheets/)    
+3. [R Graphics Cookbook](http://www.cookbook-r.com/Graphs/)   
+
+Thanks for reading out till the end and I hope this will help you to create your scatterplots with ease.    
