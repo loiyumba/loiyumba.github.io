@@ -236,17 +236,28 @@ ggplot(newDay, aes(x = month, y = Total, colour = year)) +
   scale_color_manual(values = c("darkslategray", "gold")) +
   ggtitle("Monthly Bike Rental Count") +
   labs(x = "Month", y = "Bike Rental Count") +
-  theme_bw() +
   theme(legend.position = "bottom",
         legend.direction = "horizontal",
         legend.title = element_blank(),
-        plot.title = element_text(size = 20, family = "xkcd"), ###
-        text = element_text(family = "xkcd"), ###
-        axis.text = element_text(size = 12), ###
-        axis.title = element_text(size = 12),  ###
-        panel.grid.minor = element_blank())
+        legend.text = element_text(size = 12),
+        plot.title = element_text(size = 20, family = "xkcd"),
+        text = element_text(family = "xkcd"),
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14),
+        panel.background = element_blank(),
+        axis.line.x = element_line(size = .5, colour = "black"),
+        axis.line.y = element_line(size = .5, colour = "black"))
 ```    
 
 [![xkcd]({{ site.url }}/img/LinePlots/xkcd.png)]({{ site.url }}/img/LinePlots/xkcd.png)    
 
-Thanks for reading out. Hope this will help you to construct a line plot using `ggplot2` package easily.    
+Thanks for reading out. Hope this will help you to construct a line plot using `ggplot2` package easily.     
+
+Resources
+-----
+
+1. [ggplot2](http://ggplot2.org/)    
+2. [ggplot2 cheatsheet](https://www.rstudio.com/resources/cheatsheets/)    
+3. [R Graphics Cookbook](http://www.cookbook-r.com/Graphs/)    
+
+
